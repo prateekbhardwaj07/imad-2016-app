@@ -9,5 +9,5 @@ function moveRight(){
 img.onclick = function(){
     var interval=(moveRight,50);
 }
-var elemnet=document.getElementById('text');
-element.innerHTML="Inner Html Feature";
+var elemnet=document.getElementById('text/madi');
+element.innerHTML='Inner Html Feature';
