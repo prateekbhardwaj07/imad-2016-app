@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles = {
-    articleOne: {
+    'article-one': {
     
     title : 'Article One |Prateek',
     heading: 'Article-One',
@@ -29,7 +29,7 @@ var articles = {
                 
             </p>`
     },
-    articleTwo:{
+    'article-two':{
      
     title : 'Article Two |Prateek',
     heading: 'Article-Two',
@@ -38,7 +38,7 @@ var articles = {
      <p>This is my second article for imad app.
     </p>`  
     },
-    articlethree:{
+    'article-three':{
     title : 'Article Three |Prateek',
     heading: 'Article-Three',
     date: 'sep 15 2016',
@@ -89,14 +89,11 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one',function(req,res){
-    res.send(createTemplate(articleOne));
-});
-app.get('/article-two',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+app.get('/:articleName',function(req,res){
+    //articleName=article-one
+    //aticles[aticleName]={} create content object for articles;
+    var articleName=req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
