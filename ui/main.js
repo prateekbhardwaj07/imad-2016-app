@@ -8,6 +8,6 @@ function moveRight(){
 }
 img.onclick = function(){
     var interval=(moveRight,50);
-}
+};
 var element=document.getElementById('text/madi');
 element.innerHTML='Inner Html Feature';
