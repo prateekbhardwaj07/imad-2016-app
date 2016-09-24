@@ -4,10 +4,10 @@ var img=document.getElementById('madi');
 var marginLeft=0;
 function moveRight(){
     marginLeft = marginLeft + 5;
-    img.style.marginLeft = marginLeft +'px';
+    img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function(){
-    var interval=(moveRight,50);
+    var interval = (moveRight , 50);
 };
 var element=document.getElementById('text/madi');
 element.innerHTML='Inner Html Feature';
