@@ -1,13 +1,14 @@
 console.log('Loaded!');
+var element=document.getElementById('text/madi');
+element.innerHTML='Inner Html Feature';
+
 // moving the image rught
 var img=document.getElementById('madi');
-var marginleft=0;
+var marginLeft=0;
 function moveRight(){
-    marginleft = marginleft + 5;
-    img.style.marginLeft = marginleft + 'px';
+    marginLeft = marginleft + 5;
+    img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function(){
     var interval = (moveRight , 50);
 };
-var element=document.getElementById('text/madi');
-element.innerHTML='Inner Html Feature';
