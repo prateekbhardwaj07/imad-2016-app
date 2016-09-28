@@ -1,7 +1,11 @@
 console.log('Loaded!');
 var button =document.getElementById('counter');
 
-button.onclick= function() {
+button.onclick = function()
+{
+    innerHtml('New request');
+};
+/*button.onclick= function() {
     
     // create a request object
     var request=new XMLHttpRequest();
@@ -25,3 +29,4 @@ button.onclick= function() {
     request.open('GET','http://http://prateekbhardwaj07.imad.hasura-app.io/counter',true);
     request.send(null);
 };
+*/
