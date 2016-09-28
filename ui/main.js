@@ -6,10 +6,10 @@ element.innerHTML='Inner Html Feature';
 var img=document.getElementById('madi');
 var marginLeft=0;
 function moveRight(){
-    marginLeft = marginleft + 5;
+    marginLeft = marginLeft + 5;
     img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function(){
     var interval = (moveRight , 50);
-    img.style.marginLeft = '100px';
+    //img.style.marginLeft = '100px';
 };
