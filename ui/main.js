@@ -3,7 +3,7 @@ var button =document.getElementById('counter');
 
 button.onclick = function()
 {
-    innerHtml('New request');
+    button.innerHtml('New request');
 };
 /*button.onclick= function() {
     
