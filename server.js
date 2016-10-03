@@ -97,6 +97,16 @@ app.get('/counter',function(req,res){
     res.send(counter.toString())
 });
 
+var names = [];
+app.get('/submit-name/:name',function(req,res){
+//Get the names from the request
+var name = req.params.name;
+
+names.push(name);
+//JSON JavaScript object notation
+res.send(JSON.stringify(names));
+});
+
 app.get('/:articleName',function(req,res){
     //articleName=article-one
     //aticles[aticleName]={} create content object for articles;
