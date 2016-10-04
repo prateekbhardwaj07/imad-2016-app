@@ -98,7 +98,7 @@ app.get('/counter',function(req,res){
 });
 
 var names = [];
-app.get('/submit-name/:name',function(req,res){ // /submit-name?name=dfs
+app.get('/submit-name',function(req,res){ // /submit-name?name=dfs
 //Get the names from the request
 var name = req.query.name;
 
