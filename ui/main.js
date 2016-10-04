@@ -64,7 +64,7 @@ submit.onclick = function() {
     var nameInput = document.getElementById('name');
      var name = nameInput.value;
     // Move the request
-    request.open('GET','http://prateekbhardwaj07.imad.hasura-app.io/counter',true);
+    request.open('GET','http://prateekbhardwaj07.imad.hasura-app.io/submit-name?name=' + name ,true);
     request.send(null);
 };
    
