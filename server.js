@@ -134,7 +134,7 @@ res.send(JSON.stringify(names));
 app.get('/articles/:articleName',function(req,res){
     //articleName=article-one
     //aticles[aticleName]={} create content object for articles;
-    pool.query("SELECT * FROM article WHERE title = '"+req.params.articleName+"'" , function(err,result){
+    pool.query("SELECT * FROM article WHERE title = '" + req.params.articleName + "'" , function(err,result){
         if(err)
         {
             res.status(500).send('Error in code');
@@ -142,7 +142,10 @@ app.get('/articles/:articleName',function(req,res){
         else
         {
             if(result.rows.length === 0)
-            {res.status(404).send('Article Not Found');}
+            {
+                res.status(404).send('Article Not Found');
+                
+            }
             else
             {
                 var articleData = result.rows[0];
