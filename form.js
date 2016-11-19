@@ -8,7 +8,7 @@ function prepareEventHandlers()
 			var y=x.indexOf("@");
 			var z=x.lastIndexOf(".");
 			// prevent a form from submitting if no email.
-			if ( x == "")
+			if ( x === "")
 			{
 				document.getElementById("errorMessage").innerHTML = "Please provide at least an email address!";
 				// to STOP the form from submitting
@@ -20,7 +20,7 @@ function prepareEventHandlers()
 				document.getElementById("errorMessage").innerHTML = "Please provide at least valid email address!";
 				return false;
 			}
-			else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(x) == false)
+			else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(x) === false)
 			{
 				document.getElementById("errorMessage").innerHTML = "Please provide Valid  email address!";
 				return false;
@@ -29,7 +29,7 @@ function prepareEventHandlers()
 			{
 				var password1 = String(document.getElementById('pwd1').value);
 				var password2 = String(document.getElementById('pwd').value);
-				if(password1.length == 0 ||password2.length == 0)
+				if(password1.length === 0 ||password2.length === 0)
 				{
 					alert("Please Enter a password");
 					return false;
