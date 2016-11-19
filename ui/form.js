@@ -3,7 +3,7 @@
 // handle the form submit event
 function prepareEventHandlers()
  {
-	document.getElementById('submitBtn').onclick = function(){
+	document.getElementById('Rform').onsubmit = function(){
 			var x=document.getElementById("email").value;
 			var y=x.indexOf("@");
 			var z=x.lastIndexOf(".");
