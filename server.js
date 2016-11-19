@@ -102,7 +102,7 @@ app.get('/', function (req, res) {
 });
 app.get('/form',function (req, res) {
   res.send('get request to form.html');
-})
+});
 
 var pool = new Pool(config);
 app.get('/test-db',function(req,res){
