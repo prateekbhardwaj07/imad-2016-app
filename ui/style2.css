@@ -1,0 +1,283 @@
+
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1 { 
+    font-family:"Arvo";
+	font-weight:normal;
+	font-size: 35px;
+	text-align: center;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+   font-family:"Arvo";
+   font-weight: bold;
+   font-size: 25px;
+   text-align: center;
+   color:black;
+   margin-top:-10px;
+	padding: 0;
+}
+
+h3 {
+   font-family: Oswald;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   color:black;
+   margin: 5px 0;
+	padding: 0;
+	position: relative;
+}
+
+
+.btn1{
+    background-color: black;
+    border: none;
+	color:white;
+    font-size: 20px;
+    text-align:center;
+    border-radius:5px;
+	margin-left:550px;
+	height:50px;
+	width:200px;
+	cursor:pointer;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+	}
+.center { margin: 0 auto; }
+.content_text{margin-top:-100px;}
+
+.content{ margin: 0 auto; width: 1050px; opacity:1; }
+.clear { clear: both; }
+a.lpanel { float: left; color: #e1e1e1; font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+
+a.lpanel:hover{ color: #fff; }
+a.rpanel:hover{ color: #fff; }
+
+
+.Third{
+	float:left;
+	width:50%;
+	margin:0 auto;
+	padding:15px 15px;
+}
+.pics{
+	margin-left:50px;
+	float:left;
+	height:300px;
+}
+.pro{
+	width:100px;
+	height:100px;
+	margin:10px 0 0 200px;
+	
+	
+}
+.audience_pics{
+	margin:0 0 0 50px;
+	height:380px;
+	width:50%;
+}
+.control-label{
+		font-family:verdana;
+		margin-left:-200px;
+		font-size:20px;
+		font-style:bold;
+		float:left;
+}
+.form-control{
+	
+		font-family:verdana;
+		font-size:15px;
+		float:right;
+		border:1px black solid;
+		
+	
+}
+
+/*= HEADER & NAVIGATION
+--------------------------------------------------------*/
+
+.topheader { 
+	width: 100%; 
+	background: url('header.jpg') no-repeat;
+	background-size:cover;
+	height: 50px; 	
+	position: fixed;
+	margin-top: 0px;
+	opacity:1;
+	z-index:1;
+	
+}
+#header2 { 
+	width: 100%; 
+	background: url('header.jpg') no-repeat;
+	background-size:cover;
+	height: 50px; 	
+	margin-top: 0px;
+	opacity:1;
+	z-index:1;
+	
+}
+#country{
+	width:95%;
+}
+#submitBtn{
+	margin-left:200px;
+	color:black;
+}
+
+.scrollheader{
+			background-color:blue;
+			opacity:1;
+		}
+
+#nav { width: 500px; float: right; margin-top: 5px; }
+#logo a { color: #fff; text-decoration: none; float: left; font-size: 25px; margin-top: 15px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#nav ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;	
+}
+
+#nav li{
+	margin-top: 9px;	
+	float: left;
+	padding-left: 20px;
+}
+
+#nav li a { color: #fff; opacity:0.6; font-size: 14px; text-decoration: none; font-family: 'Wellfleet'; }
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #fff; opacity:1;  }
+
+/*=Form
+*/
+section{
+	margin-left:250px;
+}
+.container{
+	float:center;
+}
+.horizon{
+	display:inline-block;
+	max-width:100%;
+}	
+#psw a {color:green ;text-decoration:none;}
+
+form{
+	/*border:3px solid gray;*/
+	margin-left:500px;
+	width:550px;
+	height:450px;
+}
+label{
+	font-size:15px;
+	font-family:verdana;
+	margin:20px;
+	padding:5px;
+	color:black;
+	text-align:left:
+}
+input {
+	font-size:15px;
+	font-family:verdana;
+	margin:20px;
+	padding:5px;
+	color:black;
+	border:hidden;
+	width:90%;
+}
+button {
+    background-color:yellow;
+    color: black;
+	text-shadow:0.5px 0.5px red;
+    margin:5px 5px 20px 25px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+	height:40px;
+	border-radius:2px;
+	box-shadow:1px 1px 2px brown;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+	margin:5px 10px 0px 250px;
+    background-color: red;
+	overflow:hidden;
+	cursor: pointer;
+    width: 150px;
+	height:40px;
+	border-radius:2px;
+	box-shadow:1px 1px 2px brown;
+
+}
+
+/*= QUOTES AND SOME ELEMENTS
+--------------------------------------------------------*/
+.quotes {   
+ font-family: 'Goudy Bookletter 1911', serif;
+   font-weight: normal;
+   font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+}
+
+
+
+#GetStarted, #Audience{ width: 100%; }
+#GetStarted{
+	background:url('getstarted3.jpg') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 350px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+
+#Audience{
+	background:url('audience.png') 50% 0 no-repeat fixed;
+	color: #333333;
+	height: 350px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 200px 0;
+	background-size: cover;
+}
+
+#Experience{
+	background: url('experience.jpg') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 350px;	
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 200px 0;
+	background-size: cover;
+}
+
+
+
+#Privacy{
+	/*background: url('privacy.jpg') 50% 0 no-repeat fixed;*/
+	height: 400px;
+	margin: 0 auto;
+	padding: 200px 0;
+	color: #fff;
+	background-size: cover;
+}
+
+
+/*= FOOTER 
+--------------------------------------------------------*/
+
+#copyright  { color: #fff; font-family:"Wellfleet";  font-size: 14px; margin-top: 100px; text-align: center;  }
+#copyright  a { text-decoration: none; color: #fff;  }
