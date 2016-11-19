@@ -99,6 +99,9 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+app.get('/form',function (req, res) {
+  res.sendFile(path.join(__dirname,'index.html'));
+})
 
 var pool = new Pool(config);
 app.get('/test-db',function(req,res){
