@@ -101,7 +101,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/form',function (req, res) {
-  res.sendFile('index.html');
+  res.send('get request to form.html');
 })
 
 var pool = new Pool(config);
