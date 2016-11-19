@@ -2,6 +2,7 @@ var express = require('express');   //to start and handle server events
 var morgan = require('morgan');   //to put logws of the server
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto = require('crypto');
 
 var config = {
     user : 'prateekbhardwaj07',
@@ -100,7 +101,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/form',function (req, res) {
-  res.sendFile(path.join(__dirname,'index.html'));
+  res.sendFile('index.html');
 })
 
 var pool = new Pool(config);
