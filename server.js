@@ -101,7 +101,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/form',function (req, res) {
-  res.send('get request to form.html');
+  res.sendFile('form.html');
 });
 
 function hash(input,salt){
