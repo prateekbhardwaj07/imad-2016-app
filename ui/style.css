@@ -176,6 +176,7 @@ label{
 	padding:5px;
 	color:black;
 	text-align:left;
+	border:hidden;
 }
 input {
 	font-size:25px;
