@@ -223,6 +223,10 @@ app.get('/ui/experience.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'experience.jpg'));
 });
 
+app.get('/ui/getstarted.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'getstarted.jpg'));
+});
+
 app.get('/ui/getstarted3.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'getstarted3.jpg'));
 });
@@ -231,8 +235,8 @@ app.get('/ui/header.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'header.jpg'));
 });
 
-app.get('/ui/pie.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'pie.jpg'));
+app.get('/ui/pie.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'pie.png'));
 });
 
 app.get('/ui/privacy.jpg', function (req, res) {
