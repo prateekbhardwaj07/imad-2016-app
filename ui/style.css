@@ -182,8 +182,9 @@ input {
 	font-size:20px;
 	font-family:verdana;
 	margin:20px;
-	padding:0 ;
+	padding:10px ;
 	color:black;
+	width:95%;
 	border:hidden;
 }
 button {
