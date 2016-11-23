@@ -202,9 +202,63 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
+app.get('/ui/audience.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'audience.png'));
+});
+
+app.get('/ui/blog_bar.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'blog_bar.png'));
+});
+
+app.get('/ui/blogview.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'blogview.png'));
+});
+
+app.get('/ui/experience.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'experience.jpg'));
+});
+
+app.get('/ui/getstarted3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'getstarted3.jpg'));
+});
+
+app.get('/ui/header.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'header.jpg'));
+});
+
+app.get('/ui/pie.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'pie.jpg'));
+});
+
+app.get('/ui/privacy.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'privacy.jpg'));
+});
+
+
+app.get('/ui/profile.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'profile.jpg'));
+});
+
+
+app.get('/ui/rf.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'rf.jpg'));
+});
+
+
+app.get('/ui/sl.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'sl.jpg'));
+});
+
+
+app.get('/ui/vr.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'vr.jpg'));
+});
+
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
