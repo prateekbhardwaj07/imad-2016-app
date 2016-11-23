@@ -35,7 +35,7 @@ $(window).on("scroll",function(){
 });
 
 document.getElementById('New User').onclick = function(){
-	location.href="http://prateekbhardwaj07.imad.hasura-app.io/form.html";
+	location.href="http://prateekbhardwaj07.imad.hasura-app.io/form";
 };
 });
 
