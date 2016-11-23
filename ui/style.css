@@ -155,6 +155,7 @@ section{
 }
 .container{
 	float:none;
+	text-size:20px;
 }
 .horizon{
 	display:inline-block;
