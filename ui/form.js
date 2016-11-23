@@ -8,7 +8,7 @@ function prepareEventHandlers()
 			var y=x.indexOf("@");
 			var z=x.lastIndexOf(".");
 			// prevent a form from submitting if no email.
-			if ( x == "")
+			if ( x === "")
 			{
 				document.getElementById("errorMessage").innerHTML = "Please provide at least an email address!";
 				// to STOP the form from submitting
@@ -29,7 +29,7 @@ function prepareEventHandlers()
 			{
 				var password1 = String(document.getElementById('pwd1').value);
 				var password2 = String(document.getElementById('pwd').value);
-				if(password1.length == 0 ||password2.length == 0)
+				if(password1.length === 0 ||password2.length === 0)
 				{
 					alert("Please Enter a password");
 					return false;
