@@ -142,11 +142,6 @@ a.rpanel:hover{ color: #fff; }
 	margin-top: 9px;	
 	float:left;
 	padding-left:10px;
-	color:white;
-	opacity:0.6;
-	font-size: 14px;
-	text-decoration: none;
-	font-family: 'Wellfleet';
 }
 
 #nav li a { color: #fff; opacity:0.6; font-size: 14px; text-decoration: none; font-family: 'Wellfleet'; }
