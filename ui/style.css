@@ -67,7 +67,7 @@ a.rpanel:hover{ color: #fff; }
 	float:left;
 	width:50%;
 	margin:0 auto;
-	/*padding:15px 15px;*/
+	padding:15px 15px;
 }
 .pics{
 	margin-left:50px;
@@ -108,7 +108,7 @@ a.rpanel:hover{ color: #fff; }
 
 .topheader { 
 	width: 100%; 
-	background: url('ui/header.jpg') no-repeat;
+	background: url('header.jpg') no-repeat;
 	background-size:cover;
 	height: 50px; 	
 	position: fixed;
@@ -222,31 +222,31 @@ button {
 
 #GetStarted, #Audience{ width: 100%; }
 #GetStarted{
-	background:url('ui/getstarted3.jpg') 50% 0 no-repeat fixed;
+	background:url('getstarted3.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 350px;
 	margin: 0;
-/*	padding: 200px 0 260px 0;*/
+	padding: 200px 0 260px 0;
 	background-size: cover;
 }
 
 #Audience{
-	background:url('ui/audience.png') 50% 0 no-repeat fixed;
+	background:url('audience.png') 50% 0 no-repeat fixed;
 	color: #333333;
 	height: 350px;
 	margin: 0 auto;
 	overflow: hidden;
-/*	padding: 200px 0;*/
+	padding: 200px 0;
 	background-size: cover;
 }
 
 #Experience{
-	background: url('ui/experience.jpg') 50% 0 no-repeat fixed;
+	background: url('experience.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 350px;	
 	margin: 0 auto;
 	overflow: hidden;
-	/*padding: 200px 0;*/
+	padding: 200px 0;
 	background-size: cover;
 }
 
@@ -256,7 +256,7 @@ button {
 	/*background: url('privacy.jpg') 50% 0 no-repeat fixed;*/
 	height: 400px;
 	margin: 0 auto;
-/*	padding: 200px 0;*/
+    padding: 200px 0;
 	color: #fff;
 	background-size: cover;
 }
