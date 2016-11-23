@@ -1,5 +1,5 @@
    
-<!----- JQUERY FOR SLIDING NAVIGATION --->   
+  
 
 $(document).ready(function() {
  $('a[href*=#]').each(function() {
