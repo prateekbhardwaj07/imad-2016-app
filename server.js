@@ -240,8 +240,8 @@ app.get('/ui/privacy.jpg', function (req, res) {
 });
 
 
-app.get('/ui/profile.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'profile.jpg'));
+app.get('/ui/profile.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'profile.png'));
 });
 
 
@@ -255,8 +255,8 @@ app.get('/ui/sl.jpg', function (req, res) {
 });
 
 
-app.get('/ui/vr.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'vr.jpg'));
+app.get('/ui/vr.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'vr.png'));
 });
 
 
