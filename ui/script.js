@@ -1,7 +1,6 @@
 
 // handle the form submit event
 function prepareEventHandlers() {
-	{  
 	
 	document.getElementById("Rform").onsubmit = function() {
 		
