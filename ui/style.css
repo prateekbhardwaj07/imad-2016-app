@@ -67,7 +67,7 @@ a.rpanel:hover{ color: #fff; }
 	float:left;
 	width:50%;
 	margin:0 auto;
-	padding:15px 15px;
+	/*padding:15px 15px;*/
 }
 .pics{
 	margin-left:50px;
@@ -90,7 +90,7 @@ a.rpanel:hover{ color: #fff; }
 		font-family:verdana;
 		margin-left:-200px;
 		font-size:20px;
-		font-style:bold;
+		font-style:italic;
 		float:left;
 }
 .form-control{
@@ -117,16 +117,6 @@ a.rpanel:hover{ color: #fff; }
 	z-index:1;
 	
 }
-#header2 { 
-	width: 100%; 
-	background: url('ui/header.jpg') no-repeat;
-	background-size:cover;
-	height: 50px; 	
-	margin-top: 0px;
-	opacity:1;
-	z-index:1;
-	
-}
 #country{
 	width:95%;
 }
@@ -141,12 +131,11 @@ a.rpanel:hover{ color: #fff; }
 		}
 
 #nav { width: 500px; float: right; margin-top: 5px; }
-#logo a { color: #fff; text-decoration: none; float: left; font-size: 25px; margin-top: 15px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#logo a {  text-decoration: none; float: left; font-size: 25px; margin-top: 15px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
 #nav ul{
 	list-style: none;
 	display: block;
 	margin: 0 auto;
-	list-style: none;	
 }
 
 #nav li{
@@ -156,7 +145,7 @@ a.rpanel:hover{ color: #fff; }
 }
 
 #nav li a { color: #fff; opacity:0.6; font-size: 14px; text-decoration: none; font-family: 'Wellfleet'; }
-#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li .active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
 #nav li a:hover { color: #fff; opacity:1;  }
 
 /*=Form
@@ -165,7 +154,7 @@ section{
 	margin-left:250px;
 }
 .container{
-	float:center;
+	float:none;
 }
 .horizon{
 	display:inline-block;
@@ -191,9 +180,8 @@ input {
 	font-size:15px;
 	font-family:verdana;
 	margin:20px;
-	padding:5px;
+	padding:0 ;
 	color:black;
-	border:hidden;
 	width:90%;
 }
 button {
@@ -238,7 +226,7 @@ button {
 	color: #fff;
 	height: 350px;
 	margin: 0;
-	padding: 200px 0 260px 0;
+/*	padding: 200px 0 260px 0;*/
 	background-size: cover;
 }
 
@@ -248,7 +236,7 @@ button {
 	height: 350px;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 200px 0;
+/*	padding: 200px 0;*/
 	background-size: cover;
 }
 
@@ -258,7 +246,7 @@ button {
 	height: 350px;	
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 200px 0;
+	/*padding: 200px 0;*/
 	background-size: cover;
 }
 
@@ -268,7 +256,7 @@ button {
 	/*background: url('privacy.jpg') 50% 0 no-repeat fixed;*/
 	height: 400px;
 	margin: 0 auto;
-	padding: 200px 0;
+/*	padding: 200px 0;*/
 	color: #fff;
 	background-size: cover;
 }
