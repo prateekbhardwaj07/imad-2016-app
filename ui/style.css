@@ -108,7 +108,7 @@ a.rpanel:hover{ color: #fff; }
 
 .topheader { 
 	width: 100%; 
-	background: url('header.jpg') no-repeat;
+	background: url('/ui/header.jpg') no-repeat;
 	background-size:cover;
 	height: 50px; 	
 	position: fixed;
@@ -222,7 +222,7 @@ button {
 
 #GetStarted, #Audience{ width: 100%; }
 #GetStarted{
-	background:url('getstarted3.jpg') 50% 0 no-repeat fixed;
+	background:url('/ui/getstarted3.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 350px;
 	margin: 0;
@@ -231,7 +231,7 @@ button {
 }
 
 #Audience{
-	background:url('audience.png') 50% 0 no-repeat fixed;
+	background:url('/ui/audience.png') 50% 0 no-repeat fixed;
 	color: #333333;
 	height: 350px;
 	margin: 0 auto;
@@ -241,7 +241,7 @@ button {
 }
 
 #Experience{
-	background: url('experience.jpg') 50% 0 no-repeat fixed;
+	background: url('/ui/experience.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 350px;	
 	margin: 0 auto;
