@@ -37,7 +37,7 @@ $(window).on("scroll",function(){
 });
 
 document.getElementById('New User').onclick = function(){
-	location.href="file:///C:/Users/Prateek/Downloads/parallax_final/parallax/form.html";
+	location.href="http://prateekbhardwaj07.imad.hasura-app.io/form.html";
 };
 });
 
