@@ -20,7 +20,7 @@ function prepareEventHandlers()
 				document.getElementById("errorMessage").innerHTML = "Please provide at least valid email address!";
 				return false;
 			}
-			else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(x) == false)
+			else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(x) === false)
 			{
 				document.getElementById("errorMessage").innerHTML = "Please provide Valid  email address!";
 				return false;
