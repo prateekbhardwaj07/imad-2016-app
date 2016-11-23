@@ -170,7 +170,7 @@ form{
 	height:450px;
 }
 label{
-	font-size:15px;
+	font-size:20px;
 	font-family:verdana;
 	margin:20px;
 	padding:5px;
@@ -179,12 +179,12 @@ label{
 	border:hidden;
 }
 input {
-	font-size:25px;
+	font-size:20px;
 	font-family:verdana;
 	margin:20px;
 	padding:0 ;
 	color:black;
-	width:90%;
+	border:hidden;
 }
 button {
     background-color:yellow;
