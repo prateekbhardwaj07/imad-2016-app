@@ -16,9 +16,9 @@ $(document).ready(function() {
                     $('html, body').animate({scrollTop: targetOffset}, 1000);
                     return false;
                 });
-      }
-      }
-  });
+     }
+     }
+ });
 
 
 $(window).on("scroll",function(){
