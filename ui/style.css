@@ -143,7 +143,7 @@ a.rpanel:hover{ color: #fff; }
 	float:left;
 	padding-left:20px;
 }
-#nav li a .status{ color: #fff; opacity:1; font-size: 14px; text-decoration: none; font-family: 'Wellfleet';}
+#nav li .status{ color: #fff; opacity:1; font-size: 14px; text-decoration: none; font-family: 'Wellfleet';}
 #nav li a { color: #fff; opacity:0.6; font-size: 14px; text-decoration: none; font-family: 'Wellfleet'; }
 #nav li .active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
 #nav li a:hover { color: #fff; opacity:1;  }
