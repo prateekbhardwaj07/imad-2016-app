@@ -1,6 +1,3 @@
-   
-  
-
 $(document).ready(function() {
  $('a[href*=#]').each(function() {
      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
