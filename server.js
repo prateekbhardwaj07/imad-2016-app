@@ -3,6 +3,7 @@ var morgan = require('morgan');   //to put logws of the server
 var path = require('path');
 var Pool = require('pg').Pool;
 var crypto = require('crypto');
+var bodyParser = require('bodyParser');
 
 var config = {
     user : 'prateekbhardwaj07',
