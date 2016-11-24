@@ -81,7 +81,7 @@ function prepareEventHandlers()
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         register.value = 'Registering...';
-		}
+		}l
 	}
 	
 //
