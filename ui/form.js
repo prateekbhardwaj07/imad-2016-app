@@ -83,11 +83,12 @@ function prepareEventHandlers()
         register.value = 'Registering...';
 		});
 	}
-// when the document loads
-window.onload =  function() {
-	prepareEventHandlers();
-	createUser();
 	
-}
+//
+$(document).ready(function(){
+    prepareEventHandlers();
+    createUser();
+    
+});
 
 
