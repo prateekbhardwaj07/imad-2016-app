@@ -225,11 +225,10 @@ button {
 
 #GetStarted, #Audience{ width: 100%; }
 #GetStarted{
-	background:url('/ui/getstarted3.jpg') 50% 0 no-repeat fixed;
+	background:url('/ui/getstarted3.jpg') 50% 0 no-repeat fixed ;
 	color: #fff;
 	height: 350px;
 	margin: 0;
-	padding: 200px 0 260px 0;
 	background-size: cover;
 }
 
