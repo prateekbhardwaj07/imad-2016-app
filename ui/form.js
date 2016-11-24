@@ -27,8 +27,8 @@ function prepareEventHandlers()
 			}
 			else
 			{
-				var password1 = String(document.getElementById('pwd1').value);
-				var password2 = String(document.getElementById('pwd').value);
+				var password1 = String(document.getElementById('password').value);
+				var password2 = String(document.getElementById('password2').value);
 				if(password1.length === 0 ||password2.length === 0)
 				{
 					alert("Please Enter a password");
