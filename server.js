@@ -195,6 +195,9 @@ app.get('/articles/:articleName',function(req,res){
     });
     
 });
+app.get('/ui/jquery-1.10.2.min.js',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','jquery-1.10.2.min.js'));
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
