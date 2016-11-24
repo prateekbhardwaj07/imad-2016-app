@@ -18,20 +18,6 @@ $(document).ready(function() {
      }
  });
 
-/*
-$(window).on("scroll",function(){
-	if(this.scrollTop()>= 150)
-	{	
-	$('#header').removeClass("topheader");
-	$('#header').addClass('scrollheader');
-	}
-	else
-	{	
-	$('#header').removeClass("scrollheader");
-	$('#header').addClass('topheader');
-	}
-});
-*/
 document.getElementById('New User').onclick = function(){
 	location.href="http://prateekbhardwaj07.imad.hasura-app.io/form";
 };
