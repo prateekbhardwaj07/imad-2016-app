@@ -122,7 +122,6 @@ a.rpanel:hover{ color: #fff; }
 	background: url('/ui/header.jpg') no-repeat;
 	background-size:cover;
 	height: 50px; 	
-	position: fixed;
 	margin-top: 0px;
 	opacity:1;
 	z-index:1;
