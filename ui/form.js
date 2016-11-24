@@ -53,7 +53,7 @@ function prepareEventHandlers()
 	
 	function createUser(){
 		var register=document.getElementById('submitBtn');
-		register.onclick(function(){
+		register.onclick = function(){
 		 var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
@@ -81,7 +81,7 @@ function prepareEventHandlers()
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         register.value = 'Registering...';
-		});
+		}
 	}
 	
 //
