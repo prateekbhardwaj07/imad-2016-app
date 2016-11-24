@@ -130,18 +130,18 @@ a.rpanel:hover{ color: #fff; }
 			opacity:1;
 		}
 
-#nav { width: 500px; float: right; margin-top: 5px; }
-#logo a {  text-decoration: none; float: left; font-size: 25px; margin-top: 15px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#nav { width: 650px; margin:8px 0 0 600px;}
+#logo a {  text-decoration: none; float: left; font-size: 25px; margin-top: 8px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
 #nav ul{
 	list-style: none;
-	display: block;
+	display: inline;
 	margin: 0 auto;
 }
 
 #nav li{
 	margin-top: 9px;	
 	float:left;
-	padding-left:10px;
+	padding-left:20px;
 }
 
 #nav li a { color: #fff; opacity:0.6; font-size: 14px; text-decoration: none; font-family: 'Wellfleet'; }
