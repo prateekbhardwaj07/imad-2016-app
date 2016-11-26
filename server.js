@@ -207,6 +207,11 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+
+app.get('/ui/Personalised.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Personalised.jpg'));
+});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
