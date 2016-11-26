@@ -15,6 +15,13 @@ h1 {
 	margin-top:0;
 	padding: 0;
 }
+h1 .h12{
+    font-family:"Arvo";
+	font-weight:normal;
+	font-size:30px;
+	margin-top:-15px;
+	color:black;
+}
 
 h2 {
    font-family:"Arvo";
