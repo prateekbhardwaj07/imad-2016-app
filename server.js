@@ -132,9 +132,13 @@ app.post('/create-user',function(req,res){
         {
             res.status(500).send(err.toString());
         }
-        else
+        else if(!err)
         {
             res.send('User Sucessfully Created'+username);
+        }
+        else
+        {
+            
         }
     });
     
