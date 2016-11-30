@@ -45,7 +45,7 @@ function prepareEventHandlers()
 				}
 				else
 				{
-				    createUser();
+				     return createUser();
 				}
 			}
 		}
