@@ -4,6 +4,8 @@
 function prepareEventHandlers()
  {
 	document.getElementById('Rform').onsubmit = function(){
+	    
+	        var register=document.getElementById('submitBtn');
 			var x=document.getElementById("email").value;
 			var y=x.indexOf("@");
 			var z=x.lastIndexOf(".");
@@ -45,46 +47,47 @@ function prepareEventHandlers()
 				}
 				else
 				{
-				     return true;
+				    var request = new XMLHttpRequest();
+    
+                    // Capture the response and store it in a variable
+                    request.onreadystatechange = function ()
+            		{
+                      if (request.readyState === XMLHttpRequest.DONE)
+            			  {
+                          // Take some action
+                          if (request.status === 200) {
+                              alert('User created successfully');
+                              register.value = 'Registered!';
+                          } else {
+                              alert('Could not register the user');
+                              register.value = 'Register';
+                          }
+                      }
+                    }
+                    
+                    // Make the request
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+                    request.open('POST', '/create-user', true);
+                    request.setRequestHeader('Content-Type', 'application/json');
+                    request.send(JSON.stringify({username: username, password: password}));  
+                    register.value = 'Registering...';
+				    // return true;
 				}
 			}
 		}
  }
-	
+/*	
 	function createUser(){
-		var register=document.getElementById('submitBtn');
+		
 		register.onclick = function(){
-		 var request = new XMLHttpRequest();
-        
-        // Capture the response and store it in a variable
-        request.onreadystatechange = function ()
-		{
-          if (request.readyState === XMLHttpRequest.DONE)
-			  {
-              // Take some action
-              if (request.status === 200) {
-                  alert('User created successfully');
-                  register.value = 'Registered!';
-              } else {
-                  alert('Could not register the user');
-                  register.value = 'Register';
-              }
-          }
-        }
-        
-        // Make the request
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        request.open('POST', '/create-user', true);
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({username: username, password: password}));  
-        register.value = 'Registering...';
+		 
 	}
-}
+}*/
 //
 $(document).ready(function(){
     prepareEventHandlers();
-    createUser();
+   // createUser();
     
 });
 
