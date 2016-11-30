@@ -45,6 +45,7 @@ function prepareEventHandlers()
 				}
 				else
 				{
+				    createUser();
 					return true;
 				}
 			}
@@ -87,7 +88,7 @@ function prepareEventHandlers()
 //
 $(document).ready(function(){
     prepareEventHandlers();
-    createUser();
+    
     
 });
 
