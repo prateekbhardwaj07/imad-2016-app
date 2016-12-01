@@ -42,7 +42,7 @@ document.getElementById('New User').onclick = function(){
               }
               else if(request.status === 500)
               {
-                  alert('Something Bad Occured On Server');
+                  alert('Something  Occured On Server');
               }
           }
         }
