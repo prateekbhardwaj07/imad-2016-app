@@ -36,7 +36,7 @@ document.getElementById('New User').onclick = function(){
               if (request.status === 200) {
                   alert('User Logged In Sucessfully');
               }
-              else if(request.status===403) {
+              else if(request.status === 403) {
                   alert('Invalid Username/Password Value');
               }
               else 
@@ -51,7 +51,7 @@ document.getElementById('New User').onclick = function(){
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
-        request.open('POST', '/Login', true);
+        request.open('POST', 'http://prateekbhardwaj07.imad.hasura-app.io/Login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
 	}
