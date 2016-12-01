@@ -16,11 +16,11 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
-/*app.use(session({
+app.use(session({
     secret: 'someRandomSecretValue',
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
-*/
+
 
 var articles = {
     'article-one': {
@@ -139,6 +139,48 @@ app.post('/create-user',function(req,res){
     });
     
 });
+
+
+
+app.post('/Login',function(req,res){
+    var  username=req.body.username;
+    var password=req.body.password;
+    
+    pool.query('SELECT * FR$OM "user" WHERE username= $1',[username],function(err,result){
+       if(err){
+           res.status(500).send(err.toString());
+       }
+       else {
+           if(result.rows.length===0){
+               res.status(403).send('The User Name Does not Exist');
+           }
+           else
+           {
+               var dbString = result.rows[0].password;
+               var salt = dbString.split('$')[2];
+               var hashedPassword = hash(password, salt);
+              if (hashedPassword === dbString) {
+                req.session.auth = {userId: result.rows[0].id};
+                res.send('credentials correct!');
+              } 
+              else 
+              {
+                res.status(403).send('username/password is invalid');
+              }
+               
+           }
+       }
+    }); 
+});
+
+/*
+app.get('/Check-login',function(req,res){
+    var  username=req.body.username;
+    var password=req.body.password;
+   
+   pool.query('SELECT * FROM "user" ') 
+});
+*/
 
 
 var pool = new Pool(config);
