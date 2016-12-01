@@ -1,30 +1,36 @@
 
 $(document).ready(function() {
     
- $('a[href*=#]').each(function() {
-     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-     && location.hostname == this.hostname
-     && this.hash.replace(/#/,'') ) {
-     var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-     var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-    if ($target){
-                    var targetOffset = $target.offset().top;
-                    $(this).click(function()
-                    {
-                    $("#nav li a").removeClass("active");
-                    $(this).addClass('active');
-                    $('html, body').animate({scrollTop: targetOffset}, 1000);
-                    return false;
-                    });
-                }
-     }
- });
+     createLogin();
+ 
+     $('a[href*=#]').each(function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname
+         && this.hash.replace(/#/,'') ) {
+         var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+         var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+        if ($target){
+                        var targetOffset = $target.offset().top;
+                        $(this).click(function()
+                        {
+                        $("#nav li a").removeClass("active");
+                        $(this).addClass('active');
+                        $('html, body').animate({scrollTop: targetOffset}, 1000);
+                        return false;
+                        });
+                    }
+         }
+     });
+    
+    document.getElementById('New User').onclick = function(){
+    	location.href="http://prateekbhardwaj07.imad.hasura-app.io/form";
+    }
 
-document.getElementById('New User').onclick = function(){
-	location.href="http://prateekbhardwaj07.imad.hasura-app.io/form";
-}
+	
+});
 
-		var login =document.getElementById('login-btn');
+    function createLogin(){
+	var login =document.getElementById('login-btn');
 		login.onclick = function(){
 		 var request = new XMLHttpRequest();
         
@@ -61,9 +67,7 @@ document.getElementById('New User').onclick = function(){
         request.send(JSON.stringify({username: username, password: password}));  
 	}
 
-
-});
-
+}
 	
 	
 
