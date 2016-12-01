@@ -56,7 +56,7 @@ document.getElementById('New User').onclick = function(){
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
-        request.open('POST', 'http://prateekbhardwaj07.imad.hasura-app.io/Login', true);
+        request.open('POST', '/Login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
 	}
