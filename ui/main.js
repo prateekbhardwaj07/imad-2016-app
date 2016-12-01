@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+    
  $('a[href*=#]').each(function() {
      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
      && location.hostname == this.hostname
@@ -39,7 +40,7 @@ document.getElementById('New User').onclick = function(){
               else if(request.status === 403) {
                   alert('Invalid Username/Password Value');
               }
-              else 
+              else if(request.status === 500)
               {
                   alert('Something Bad Occured On Server');
               }
