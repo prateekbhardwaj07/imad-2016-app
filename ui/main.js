@@ -44,6 +44,10 @@ document.getElementById('New User').onclick = function(){
               {
                   alert('Something  Occured On Server');
               }
+              else
+              {
+                  alert('Unknown Error Occured');
+              }
           }
         }
         
