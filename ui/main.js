@@ -47,8 +47,8 @@ document.getElementById('New User').onclick = function(){
         }
         
         // Make the request
-        var username = document.getElementById('uname').value;
-        var password = document.getElementById('Password').value;
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
         request.open('POST', '/Login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
