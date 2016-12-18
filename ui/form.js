@@ -1,4 +1,4 @@
-/*
+
 
 // handle the form submit event
 function prepareEventHandlers()
@@ -7,18 +7,6 @@ function prepareEventHandlers()
 	{
 	    
 			
-			}
-		}
-		
- }
- 
-  */
-  function createUser()
-  {
-    		var register=document.getElementById('submitBtn');
-    		register.onclick = function(){
-            
-            
             var x=document.getElementById("email").value;
 			var y=x.indexOf("@");
 			var z=x.lastIndexOf(".");
@@ -61,7 +49,22 @@ function prepareEventHandlers()
 				else
             		{
             				    
-                		 var request = new XMLHttpRequest();
+                		 
+                        
+				         return true;
+				}
+			}
+		}
+		
+ }
+ 
+  
+  function createUser()
+  {
+    		var register=document.getElementById('submitBtn');
+    		register.onclick = function(){
+    		    
+var request = new XMLHttpRequest();
                         
                         // Capture the response and store it in a variable
                         request.onreadystatechange = function ()
@@ -86,9 +89,11 @@ function prepareEventHandlers()
                         request.setRequestHeader('Content-Type', 'application/json');
                         request.send(JSON.stringify({username: username, password: password}));  
                         register.value = 'Registering...';
-                        
-				         return true;
-				}
+
+
+
+            
+            
     	}
     }
 }
@@ -98,5 +103,3 @@ $(document).ready(function(){
     createUser();
     
 });
-
-
