@@ -46,13 +46,13 @@ function prepareEventHandlers()
 				}
 				else
 				{
+				    createUser();
 				     return true;
 				}
 			}
 		}
- }
-	
-	function createUser(){
+			
+		function createUser(){
 		var register=document.getElementById('submitBtn');
 		register.onclick = function(){
 		 var request = new XMLHttpRequest();
@@ -82,6 +82,10 @@ function prepareEventHandlers()
         register.value = 'Registering...';
 	}
 }
+
+		
+ }
+	
 //
 $(document).ready(function(){
    // prepareEventHandlers();
