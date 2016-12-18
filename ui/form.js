@@ -27,18 +27,18 @@ function prepareEventHandlers()
 			{
 				document.getElementById("errorMessage").innerHTML = "Please provide at least an email address!";
 				// to STOP the form from submitting
-				return false;
+				//return false;
 			}
 			else if(y<1 ||z<y+2 ||z+2>=x.length)
 			{ 
 				// reset and allow the form to submit
 				document.getElementById("errorMessage").innerHTML = "Please provide at least valid email address!";
-				return false;
+				//return false;
 			}
 			else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(x) === false)
 			{
 				document.getElementById("errorMessage").innerHTML = "Please provide Valid  email address!";
-				return false;
+				//return false;
 			}
 			else
 			{
@@ -47,16 +47,16 @@ function prepareEventHandlers()
 				if(password1.length === 0 ||password2.length === 0)
 				{
 					alert("Please Enter a password");
-					return false;
+					//return false;
 				}
 				else if(password1.length <= 6)
 				{
 					alert("Please Enter more than 6 characters");
-					return false;
+					//return false;
 				}
 				else if(password1 != password2){
 					alert("please enter same passwords");
-					return false;
+					//return false;
 				}
 				else
             		{
@@ -87,7 +87,7 @@ function prepareEventHandlers()
                         request.send(JSON.stringify({username: username, password: password}));  
                         register.value = 'Registering...';
                         
-				         return true;
+				        // return true;
 				}
     	}
     }
