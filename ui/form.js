@@ -47,12 +47,14 @@ function prepareEventHandlers()
 				}
 				else
 				{
-				    createUser();
+				    
 				     return true;
 				}
 			}
 		}
-    			
+		
+ }
+ 
     		function createUser(){
     		var register=document.getElementById('submitBtn');
     		register.onclick = function(){
@@ -84,13 +86,11 @@ function prepareEventHandlers()
     	}
     }
 
-		
- }
 	
 //
 $(document).ready(function(){
     prepareEventHandlers();
-   // createUser();
+    createUser();
     
 });
 
