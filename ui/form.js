@@ -64,7 +64,7 @@ function prepareEventHandlers()
     		var register=document.getElementById('submitBtn');
     		register.onclick = function(){
     		    
-var request = new XMLHttpRequest();
+            var request = new XMLHttpRequest();
                         
                         // Capture the response and store it in a variable
                         request.onreadystatechange = function ()
@@ -95,7 +95,7 @@ var request = new XMLHttpRequest();
             
             
     	}
-    }
+    
 }
 	
 //
