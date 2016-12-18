@@ -92,6 +92,7 @@ function prepareEventHandlers()
 	
 //
 $(document).ready(function(){
+    prepareEventHandler();
     createUser();
     
 });
