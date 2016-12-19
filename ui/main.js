@@ -1,7 +1,5 @@
 
 $(document).ready(function() {
-    
-     createLogin();
  
      $('a[href*=#]').each(function() {
          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -27,9 +25,7 @@ $(document).ready(function() {
     }
 
 	
-});
-
-    function createLogin(){
+	
 	var login =document.getElementById('login-btn');
 		login.onclick = function(){
 		 var request = new XMLHttpRequest();
@@ -55,7 +51,7 @@ $(document).ready(function() {
                   alert('Unknown Error Occured');
               }
           }
-        }
+        };
         
         // Make the request
         var username = document.getElementById('username').value;
@@ -65,11 +61,9 @@ $(document).ready(function() {
         request.open('POST', '/Login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
-	}
+	};
+});
 
-}
-	
-	
 
 
 
