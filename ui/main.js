@@ -24,7 +24,13 @@ $(document).ready(function() {
     	location.href="http://prateekbhardwaj07.imad.hasura-app.io/form";
     };
 
+	Loggin();
 	
+	
+});
+
+
+function Loggin(){
 	
 	var login =document.getElementById('login-btn');
 		login.onclick = function(){
@@ -62,8 +68,6 @@ $(document).ready(function() {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
 	};
-});
-
-
+}
 
 
