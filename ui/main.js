@@ -22,7 +22,7 @@ $(document).ready(function() {
     
     document.getElementById('New User').onclick = function(){
     	location.href="http://prateekbhardwaj07.imad.hasura-app.io/form";
-    }
+    };
 
 	
 	
@@ -34,7 +34,7 @@ $(document).ready(function() {
         request.onreadystatechange = function ()
 		{
           if (request.readyState === XMLHttpRequest.DONE)
-			  {
+		 {
               // Take some action
               if (request.status === 200) {
                   alert('User Logged In Sucessfully');
